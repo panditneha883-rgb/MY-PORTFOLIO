@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha | portfolio</title> 
+    <link rel="stylesheet" href="STYLE.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <nav>
+        <h2>Neha</h2>
+         <ul>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#projects">projects<a></li>
+            <li> <a href="#skills">Skills</a></li>
+            <li> <a href="#contact">Contact</a></li>
+            <li> <a href="#features">Features</a></li>
+            <li><button id="theme-btn">🌙</button></li>
+         </ul>
+    </nav>
+    <section  id="home"class="hero">
+        <div class="hero-text">
+         <h1> Hi, I'm <span>Neha</span></h1>
+         <p>I'm Web Developer</p>
+         <a href="images/Resume.pdf" >
+         <button>Download Resume</button>
+         </a>
+        </div>
+        <div class="">
+            <img src="images/girl.jpg" alt="Neha">
+        </div>
+        </section>
+        
+
+    <section id="about" class="about">
+        <div class="about-img">
+            <img src="images/neha.jpg" alt="About Neha"></div>
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h3>Web Developer!!</h3>
+            <p>
+            Hi,I'm Neha. I love creating beautiful and responsive websites.
+            I have strong foundation in Web Development with Java.
+            My goal is to build website that are both user-friendly and visually appealing.
+        </p>
+        <button id="showBtn" onclick="showDetails( )">Read More</button>
+        <div id="personal-details" style="display: none; margin-top: 20px;">
+            <div class="info-box">
+            <div class="info-row">
+                <span><b>Date of Birth:</b></span>
+                <span>21 August 2004</span>
+            </div>
+
+             <div class="info-row">
+                <span><b> Location:</b></span>
+                <span>Nagpur,Maharashtra</span>
+            </div>
+
+             <div class="info-row">
+                <span><b>Education:</b></span>
+                <span>BCA Graduate,GH Raisoni University,Nagpur</span>
+            </div>
+
+             <div class="info-row">
+                <span><b>Email</b></span>
+                <span>panditneha883@gmail.com</span>
+            </div>
+
+             <div class="info-row">
+                <span><b>Hobby</b></span>
+                <span>Love to create an Art</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Portfolio">
+          <h3> Portfolio Website</h3>
+          <p> I create  responsive portfolio with the help of HTML,CSS and JS</p>
+          <a href="INDEX.html"class="btn" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Calculator"> 
+          <h3>Calculator App</h3>
+          <p>With help of JavaScript  build a simpe calculator</p>
+         <a href="./PROJECTS/CALCULATOR/cal.html" class="btn" target="_blank">View Project</a> 
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400" alt="Web Design">
+          <h3>Landing Page</h3>
+          <p>To create modern Landing page for Company</p>
+          <a  href="./PROJECTS/WEB-DESIGN/indexx.html" class="btn"> View Project</a>
+        </div>
+        
+
+    </div>
+    </section>
+
+    
+
+    <section id="skills">
+        <h2>My  Creative skills</h2>
+        <div class="skills-container">
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"alt="HTML">
+            <h3>HTML</h3>
+            <P>Structure banane ke liye</P>
+        </div>
+       
+        <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"alt="CSS">
+            <h3>CSS</h3>
+            <P>Design aur styling ke liye</P>
+        </div>
+
+       <div class="skill-card">
+            <img src="images/JS.jpg" alt="JS">
+            <h3>JS</h3>
+            <P>Website ko interactive banane ke liye</P>
+        </div>
+
+       <div class="skill-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png"alt="Communication">
+            <h3>Communication</h3>
+            <P>Team me ache se baat krne</P>
+        </div>
+    </div>
+    </section>
+
+     <section id="contact">
+        <div class="container">
+        <h2>Let's Talk</h2>
+        <p class="subtitle">Have project in mind? Drop the message</p>
+
+        <div class="contact-container">
+          <form id="contactForm">
+            <div class="input-group">
+            <input type="text" placeholder="Your Name" reruired>
+            </div>
+           <div class="input-group">
+            <input type="email"placeholder="Your email" required>
+            </div>
+            <div class="input-group">
+            <textarea placeholder="Your Message"required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>  
+            <div class="contact-info">
+                <a href="mailto:yourmail@gmail.com" class="contact-card">
+                    <img src="images/email icon.png" alt="Email">
+                    <h3>Email Me</h3>
+                    <p>panditneha883@gmail.com</p>
+                   </a>
+
+                   <a href="https://wa.me/918600989070"  target="_blank" class="contact-card">
+                    <img src="images/whatsapp icon.jpg" alt="WhatsApp">
+                    <h3>
+                    WhatsApp
+                    </h3>
+                    <p>chat instantly</p>
+                   </a>
+                   </div>
+            </div>
+        </div>
+    </section>
+
+     <section id="features" class="features">
+        <h2>My Features</h2>
+        <div class="features-container">
+            <div class="features-card">
+                <h3>Web Design</h3>
+                <p> Responsive and beautiful websites</p>
+            </div>
+            <div class="features-card">
+                <h3>Fast Performance</h3>
+                <p>Lightweight code for fast Load and smooth performance</p>
+            </div>
+            <div class="features-card">
+                <h3>Creative UI</h3>
+                 <p>Colour,animation and hover effects with  unique design</p>
+            </div>
+        </div>
+
+     </section>
+
+     <footer>
+        <p>2026 Neha | Follow me:
+        <a href="https://github.com/panditneha883-rgb" target="_blank">Github</a> |<a href="https://www.linkedin.com/in/">LinkedIn</a> | <a href="">Instagram</a>        
+        </p>
+     </footer>
+
+   <script>
+    function showDetails(){
+        var x = document.getElementById("personal-details");
+        var btn = document.getElementById("showBtn");
+        if(x.style.display ==="none"){
+            x.style.display="block";
+            btn.innerHTML="Show Less";
+        }else{
+            x.style.display= "none";
+            btn.innerHTML ="Read More";
+        }
+    }
+   </script>
+<script src="SCRIPT.js"></script>
+</body>
+</html>

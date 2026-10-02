@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    
+
+    <aside class="sidebar">
+        <h2 class="logo">NEHA<span>.ADMIN</span></h2>
+        <ul>
+            <li class="active" data-page="dashboard">📊 Dashboard</li>
+            <li data-page="users">👥 Users</li>
+            <li data-page="analytics">📈 Analytics</li>
+            <li data-page="settings">⚙️ Settings</li>
+            <li data-page="logout">🚪 Logout</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <!-- PAGE 1: DASHBOARD -->
+        <section id="dashboard" class="page active">
+            <header class="topbar">
+                <h1>Dashboard</h1>
+                <div class="profile" id="profileBtn">
+                    <img src="https://i.pravatar.cc/40" alt="user">
+                    <span>NEHA</span>
+                <div class="dropdown" id="profileDropdown">
+                    <a href="#" data-page="profile">👤 My Profile</a>
+                        <a href="#" data-page="settings">⚙️ Settings</a>
+                        <a href="#" data-page="logout">🚪 Logout</a>
+                    </div>
+                </div>
+            </div>
+            </header>
+            <section class="stats">
+                <div class="stat-card"><h4>Total Users</h4><h2>479K</h2><p class="up">+12.5% this month</p></div>
+                <div class="stat-card"><h4>Page Views</h4><h2>2.7M</h2><p class="up">+8.2% this month</p></div>
+                <div class="stat-card"><h4>Bounce Rate</h4><h2>40.6%</h2><p class="down">-3.1% this month</p></div>
+                <div class="stat-card"><h4>Avg. Session</h4><h2>17min</h2><p class="up">+5.4% this month</p></div>
+            </section>
+            <section class="charts">
+                <div class="chart-box"><h3>Users Last 7 Days</h3><canvas id="barChart"></canvas></div>
+                <div class="chart-box"><h3>Traffic Source</h3><canvas id="pieChart"></canvas></div>
+            </section>
+        </section>
+
+        <!-- PAGE 2: USERS -->
+        <section id="users" class="page">
+            <header class="topbar"><h1>Users Management</h1></header>
+            <div class="card"><h3>All Users Table</h3>
+                <table class="user-table">
+                    <tr><th>Name</th><th>Email</th><th>Status</th></tr>
+                    <tr><td>Rahul</td><td>rahul@gmail.com</td><td><span class="badge active">Active</span></td></tr>
+                    <tr><td>Priya</td><td>priya@gmail.com</td><td><span class="badge pending">Pending</span></td></tr>
+                    <tr><td>Amit</td><td>amit@gmail.com</td><td><span class="badge active">Active</span></td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- PAGE 3: ANALYTICS -->
+        <section id="analytics" class="page">
+            <header class="topbar"><h1>Analytics</h1></header>
+            <div class="chart-full"><h3>Sessions vs Page Views - 6 Months</h3><canvas id="lineChart"></canvas></div>
+        </section>
+
+        <!-- PAGE 4: SETTINGS -->
+        <section id="settings" class="page">
+            <header class="topbar"><h1>Settings</h1></header>
+            <div class="card">
+                <h3>Profile Settings</h3>
+                <input type="text" placeholder="Your Name" value="NEHA">
+                <input type="email" placeholder="Your Email" value="neha@admin.com">
+                <input type="password" placeholder="New Password">
+                <button class="btn">Save Changes</button>
+            </div>
+        <!-- PAGE 5: PROFILE -->
+<section id="profile" class="page">
+    <header class="topbar"><h1>My Profile</h1></header>
+    <div class="card" style="text-align:center;">
+        <img src="https://i.pravatar.cc/100" style="border-radius:50%; margin-bottom:15px; border:3px solid #0288d1;">
+        <h3>NEHA</h3>
+        <p style="color:#555;">neha@admin.com</p>
+        <p style="color:#777;">Role: Admin</p>
+        <p style="color:#777;">Joined: Jan 2024</p>
+        <button class="btn" style="margin-top:15px;">Edit Profile</button>
+    </div>
+</section>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
+
+
+    
+                
